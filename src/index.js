@@ -1,6 +1,6 @@
-import Grid from './Grid';
-import Cell from './Cell';
-import Text from './Text';
+import Grid from './components/Grid';
+import Cell from './components/Cell';
+import Text from './components/Text';
 
 const Protovue = {
   install(Vue) {
