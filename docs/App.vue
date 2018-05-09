@@ -1,7 +1,9 @@
 <template>
   <div>
-    <v1-grid guides size="12x10" gap="10">
-      <v1-cell size="12x1" />
+    <v1-grid size="12x10" gap="10">
+      <v1-cell size="12x1">
+        <v1-nav />
+      </v1-cell>
       <v1-cell size="2x9" y="1">
         <h1>this is a random test to see how long cells get</h1>
         <v1-text rows="15" />
@@ -15,12 +17,7 @@
 </template>
 
 <script>
-import Components from '../src/components';
-
 export default {
-  components: {
-    ...Components
-  },
   data() {
     return {};
   },

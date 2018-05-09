@@ -1,9 +1,11 @@
-import Grid from './Grid';
 import Cell from './Cell';
+import Grid from './Grid';
+import Nav from './Nav';
 import Text from './Text';
 
 export default {
-  'p-grid': Grid,
-  'p-cell': Cell,
-  'p-text': Text
+  'v1-cell': Cell,
+  'v1-grid': Grid,
+  'v1-nav': Nav,
+  'v1-text': Text
 };
