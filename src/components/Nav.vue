@@ -32,7 +32,7 @@ export default {
   props: {
     links: {
       default: function () {
-        return 6
+        return 4
       }
     }
   },

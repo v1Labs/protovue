@@ -45,5 +45,6 @@ export default {
 p {
   height: 10px;
   margin-bottom: 15px;
+  border-radius: 3px;
 }
 </style>

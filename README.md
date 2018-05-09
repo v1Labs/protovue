@@ -8,9 +8,9 @@
 
 ```javascript
 <v1-grid />
-<v1-grid columns="4" /> // Default: 12
-<v1-grid rows="6" /> // Default: 10
-<v1-grid gap="0" /> // Default: 5
+<v1-grid size="8x8" /> // Default: 12x10
+<v1-grid gap="0" /> // Default: 10
+<v1-grid guides /> // Shows guides to help build cells
 ```
 
 ### Cell
@@ -27,4 +27,13 @@
 ```javascript
 <v1-text />
 <v1-text rows="5" /> // Default: 3
+```
+
+### Nav
+
+> Works best in a vertically narrow cell
+
+```javascript
+<v1-nav />
+<v1-nav links="5" /> // Default: 4
 ```
