@@ -4,15 +4,15 @@ import Text from './components/Text';
 
 const Protovue = {
   install(Vue, opt={}) {
-    const color = opt.color || '#dddddd';
+    const color = opt.color || '#dfdfdf';
     Vue.component("v1-grid", Grid);
     Vue.component("v1-cell", Cell);
     Vue.component("v1-text", Text);
 
     Vue.prototype.$theme = {
       color,
-      dark: lightenColor(color, -50),
-      light: lightenColor(color, 50)
+      dark: lightenColor(color, -20),
+      light: lightenColor(color, 20)
     }
   }
 };
@@ -57,8 +57,6 @@ function lightenColor(col, amt) {
 }
 
 export default Protovue;
-//export { Grid, Cell, Text };
-
 if (typeof window !== "undefined" && window.Vue) {
   window.Vue.use(Protovue);
 }
