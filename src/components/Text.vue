@@ -24,9 +24,7 @@ export default {
   },
   data () {
     return {
-      color: null,
-      dark: null,
-      light: null
+      color: null
     }
   },
   methods: {
@@ -39,8 +37,6 @@ export default {
   },
   created () {
     this.color = this.$theme.color;
-    this.dark = this.$theme.dark;
-    this.light = this.$theme.light;
   }
 }
 </script>

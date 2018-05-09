@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v1-grid>
-      <v1-cell size="2x5" x="1" y="3">
+    <v1-grid guides gap="0">
+      <v1-cell size="2x5">
         <v1-text rows="5" />
       </v1-cell>
     </v1-grid>

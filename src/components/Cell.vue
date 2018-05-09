@@ -6,6 +6,7 @@
       'grid-column-end': Number(cols) + Number(colOffset) + 1,
       'grid-row-start': Number(rowOffset) + 1,
       'grid-row-end': Number(rows) + Number(rowOffset) + 1,
+      'background': flat ? 'transparent' : light
     }"
   >
     <slot />
@@ -17,20 +18,19 @@ export default {
   props: {
     size: String,
     x: Number,
-    y: Number
+    y: Number,
+    flat: Boolean
   },
   data () {
     return {
       cols: 1,
       rows: 1,
       colOffset: 0,
-      rowOffset: 0
+      rowOffset: 0,
+      light: null
     }
   },
   created () {
-    console.log('s', this.size);
-    console.log('x', this.x);
-    console.log('y', this.y);
     if (this.size) {
       let sizes = this.size.split(/[x\s,]/);
       this.cols = sizes[0];
@@ -42,14 +42,13 @@ export default {
     if (this.y) {
       this.rowOffset = this.y;
     }
+    this.light = this.$theme.light;
   }
 }
 </script>
 
 <style scoped>
   .cell {
-    color: blue;
     padding: 15px;
-    background: #eee;
   }
 </style>
