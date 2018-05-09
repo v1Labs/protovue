@@ -6,7 +6,8 @@
       'grid-column-end': Number(cols) + Number(colOffset) + 1,
       'grid-row-start': Number(rowOffset) + 1,
       'grid-row-end': Number(rows) + Number(rowOffset) + 1,
-      'background': flat ? 'transparent' : light
+      'background': flat ? 'transparent' : light,
+      'color': dark
     }"
   >
     <slot />
@@ -27,7 +28,8 @@ export default {
       rows: 1,
       colOffset: 0,
       rowOffset: 0,
-      light: null
+      light: null,
+      dark: null
     }
   },
   created () {
@@ -42,6 +44,7 @@ export default {
     if (this.y) {
       this.rowOffset = this.y;
     }
+    this.dark = this.$theme.dark;
     this.light = this.$theme.light;
   }
 }
@@ -50,5 +53,9 @@ export default {
 <style scoped>
   .cell {
     padding: 15px;
+  }
+
+  .cell h1 {
+    color: inherit;
   }
 </style>
