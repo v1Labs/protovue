@@ -1,27 +1,30 @@
-# protovue
+# Protovue
 
-> A prototyping component library
+> A prototyping component library build for Vue.js
 
-## Build Setup
+## Components
 
-``` bash
-# install dependencies
-npm install
+### Grid
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
+```javascript
+<v1-grid />
+<v1-grid columns="4" /> // Default: 12
+<v1-grid rows="6" /> // Default: 10
+<v1-grid gap="0" /> // Default: 5
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Cell
+
+```javascript
+<v1-cell />
+<v1-cell size="2x4" /> // WxH: size="2,4" and size="2 4" also work
+<v1-cell x="1" /> // Default: 0
+<v1-cell y="3" /> // Default: 0
+```
+
+### Text
+
+```javascript
+<v1-text />
+<v1-text rows="5" /> // Default: 3
+```

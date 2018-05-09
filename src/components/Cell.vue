@@ -15,29 +15,33 @@
 <script>
 export default {
   props: {
-    cols: {
-      default: function () {
-        return 1
-      }
-    },
-    rows: {
-      default: function () {
-        return 1
-      }
-    },
-    colOffset: {
-      default: function () {
-        return 0
-      }
-    },
-    rowOffset: {
-      default: function () {
-        return 0
-      }
-    }
+    size: String,
+    x: Number,
+    y: Number
   },
   data () {
-    return {}
+    return {
+      cols: 1,
+      rows: 1,
+      colOffset: 0,
+      rowOffset: 0
+    }
+  },
+  created () {
+    console.log('s', this.size);
+    console.log('x', this.x);
+    console.log('y', this.y);
+    if (this.size) {
+      let sizes = this.size.split(/[x\s,]/);
+      this.cols = sizes[0];
+      this.rows = sizes[1];
+    }
+    if (this.x) {
+      this.colOffset = this.x;
+    }
+    if (this.y) {
+      this.rowOffset = this.y;
+    }
   }
 }
 </script>

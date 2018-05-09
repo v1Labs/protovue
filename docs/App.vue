@@ -1,18 +1,10 @@
 <template>
   <div>
-    <p-grid>
-      <p-cell cols="3" rows="8">
-        <p-text rows="5" />
-      </p-cell>
-      <p-cell cols="3" colOffset="3" rows="4" />
-      <p-cell cols="3" colOffset="3" rows="4" rowOffset="4" />
-      <p-cell cols="6" colOffset="6" rows="1" />
-      <p-cell cols="6" colOffset="6" rows="1" />
-      <p-cell cols="6" colOffset="6" rows="3" rowOffset="1" />
-      <p-cell cols="6" colOffset="6" rows="3" rowOffset="4" />
-      <p-cell cols="6" colOffset="6" rows="1" rowOffset="7" />
-      <p-cell cols="12" rows="2" rowOffset="8" />
-    </p-grid>
+    <v1-grid>
+      <v1-cell size="2x5" x="1" y="3">
+        <v1-text rows="5" />
+      </v1-cell>
+    </v1-grid>
   </div>
 </template>
 

@@ -3,7 +3,8 @@
     <p
       v-for="row in Number(rows)"
       :style="{
-        'width': rowWidth(row)
+        'width': rowWidth(row),
+        'background': color
       }"
       :key="row"
     >
@@ -22,7 +23,11 @@ export default {
     }
   },
   data () {
-    return {}
+    return {
+      color: null,
+      dark: null,
+      light: null
+    }
   },
   methods: {
     rowWidth (row) {
@@ -31,6 +36,11 @@ export default {
       const addedWidth = baseWidth + (Math.random() * addedMax);
       return addedWidth + '%';
     }
+  },
+  created () {
+    this.color = this.$theme.color;
+    this.dark = this.$theme.dark;
+    this.light = this.$theme.light;
   }
 }
 </script>
@@ -38,7 +48,6 @@ export default {
 <style scoped>
 p {
   height: 10px;
-  background: #aaa;
   margin-bottom: 15px;
 }
 </style>
