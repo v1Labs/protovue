@@ -17,8 +17,8 @@
 export default {
   props: {
     size: String,
-    x: Number,
-    y: Number,
+    x: String,
+    y: String,
     flat: Boolean
   },
   data () {
