@@ -2,28 +2,31 @@
   <div
     class="grid"
     v-bind:style="{
-      'grid-gap': `${Number(gap)}px`,
-      'padding': `${Number(gap)}px`,
-      'grid-template-columns': `repeat(${columns}, 1fr)`,
-      'grid-template-rows': `repeat(${rows}, 1fr)`
+      'grid-gap': `${cellGap}px`,
+      'padding': `${cellGap}px`,
+      'padding-bottom': 0,
+      'grid-template-columns': `repeat(${cols}, 1fr)`,
+      'grid-template-rows': `repeat(${rows}, 1fr)`,
+      'width': `${width}px`,
+      'height': `${height}px`
     }"
   >
     <slot />
     <div v-if="guides">
       <div
         class="guide-x"
-        v-for="row in rows"
-        :key="row"
+        v-for="row in (rows-1)"
+        :key="row + '-guide-x'"
         v-bind:style="{
-          'top': (row / rows * 100) + '%'
+          'top': ((row / rows) * (height + cellGap)) + (cellGap/2) + 'px'
         }"
       />
       <div
         class="guide-y"
-        v-for="column in columns"
-        :key="column"
+        v-for="col in (cols-1)"
+        :key="col + '-guide-y'"
         v-bind:style="{
-          'left': (column / columns * 100) + '%'
+          'left': ((col / cols) * (width + cellGap)) + (cellGap/2) + 'px'
         }"
       />
     </div>
@@ -34,24 +37,29 @@
 export default {
   props: {
     guides: Boolean,
-    columns: {
-      default: function () {
-        return 12
-      }
-    },
-    rows: {
-      default: function () {
-        return  10
-      }
-    },
-    gap: {
-      default: function () {
-        return 5
-      }
-    }
+    size: String,
+    gap: String
   },
   data () {
-    return {}
+    return {
+      cols: 12,
+      rows: 10,
+      cellGap: 10,
+      width: document.documentElement.clientWidth,
+      height: document.documentElement.clientHeight
+    }
+  },
+  created () {
+    if (this.size) {
+      let sizes = this.size.split(/[x\s,]/);
+      this.cols = Number(sizes[0]);
+      this.rows = Number(sizes[1]);
+    }
+    if (this.gap) {
+      this.cellGap = Number(this.gap);
+      this.width = this.width - (this.cellGap * 2);
+      this.height = this.height - (this.cellGap * 2);
+    }
   }
 }
 </script>
@@ -59,7 +67,6 @@ export default {
 <style scoped>
   .grid {
     display: grid;
-    height: 100vh;
   }
 
   .guide-x {
