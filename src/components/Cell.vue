@@ -53,6 +53,8 @@ export default {
 <style scoped>
   .cell {
     padding: 15px;
+    position: relative;
+    overflow: scroll;
   }
 
   .cell h1 {

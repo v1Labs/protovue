@@ -12,7 +12,7 @@
     }"
   >
     <slot />
-    <div v-if="guides">
+    <div v-if="guides" class="guides">
       <div
         class="guide-x"
         v-for="row in (rows-1)"
@@ -69,18 +69,24 @@ export default {
     display: grid;
   }
 
+  .guides {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
   .guide-x {
     position: absolute;
     left: 0;
     right: 0;
     border-top: 1px solid #8dd4fd;
-    transform: translateY(-50%);
   }
   .guide-y {
     position: absolute;
     top: 0;
     bottom: 0;
     border-left: 1px solid #8dd4fd;
-    transform: translateX(-50%);
   }
 </style>
