@@ -1,6 +1,7 @@
 import Cell from './components/Cell';
 import Footer from './components/Footer';
 import Grid from './components/Grid';
+import Image from './components/Image';
 import Nav from './components/Nav';
 import Text from './components/Text';
 
@@ -10,6 +11,7 @@ const Protovue = {
     Vue.component("v1-cell", Cell);
     Vue.component("v1-footer", Footer);
     Vue.component("v1-grid", Grid);
+    Vue.component("v1-image", Image);
     Vue.component("v1-nav", Nav);
     Vue.component("v1-text", Text);
 

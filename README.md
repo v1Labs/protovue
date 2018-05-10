@@ -31,6 +31,16 @@
 <v1-text rows="5" /> // Default: 3
 ```
 
+### Image
+
+```javascript
+<v1-image />
+<v1-image width="100px" /> // Default: 100%
+<v1-image height="100px" /> // Default: 200px
+<v1-image round /> // Makes circle if width equals height
+<v1-image center /> // Centers horizontally
+```
+
 ### Nav
 
 > Works best in a vertically narrow cell
