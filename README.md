@@ -20,6 +20,8 @@
 <v1-cell size="2x4" /> // WxH: size="2,4" and size="2 4" also work
 <v1-cell x="1" /> // Default: 0
 <v1-cell y="3" /> // Default: 0
+<v1-cell middle /> // Vertically aligns content in middle
+<v1-cell bottom /> // Vertically aligns content in bottom
 ```
 
 ### Text
@@ -36,4 +38,13 @@
 ```javascript
 <v1-nav />
 <v1-nav links="5" /> // Default: 4
+```
+
+### Footer
+
+> Works best in a vertically narrow cell
+
+```javascript
+<v1-footer />
+<v1-footer links="5" /> // Default: 4
 ```
