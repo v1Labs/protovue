@@ -1,4 +1,5 @@
 import Cell from './components/Cell';
+import Footer from './components/Footer';
 import Grid from './components/Grid';
 import Nav from './components/Nav';
 import Text from './components/Text';
@@ -7,6 +8,7 @@ const Protovue = {
   install(Vue, opt={}) {
     const color = opt.color || '#dfdfdf';
     Vue.component("v1-cell", Cell);
+    Vue.component("v1-footer", Footer);
     Vue.component("v1-grid", Grid);
     Vue.component("v1-nav", Nav);
     Vue.component("v1-text", Text);

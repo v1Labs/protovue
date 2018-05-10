@@ -10,7 +10,14 @@
       'color': dark
     }"
   >
-    <slot />
+    <div
+      class="content"
+      :style="{
+        'align-self': contentAlign()
+      }"
+    >
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -20,7 +27,9 @@ export default {
     size: String,
     x: String,
     y: String,
-    flat: Boolean
+    flat: Boolean,
+    middle: Boolean,
+    bottom: Boolean
   },
   data () {
     return {
@@ -30,6 +39,14 @@ export default {
       rowOffset: 0,
       light: null,
       dark: null
+    }
+  },
+  methods: {
+    contentAlign () {
+      let align = 'auto';
+      if (this.bottom) { align = 'flex-end' }
+      if (this.middle) { align = 'center' }
+      return align;
     }
   },
   created () {
@@ -55,6 +72,7 @@ export default {
     padding: 15px;
     position: relative;
     overflow: scroll;
+    display: grid;
   }
 
   .cell h1 {
