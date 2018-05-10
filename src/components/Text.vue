@@ -1,5 +1,10 @@
 <template>
-  <div>
+  <div
+    class="text"
+    :style="{
+      'text-align': center ? 'center' : 'left'
+    }"
+  >
     <p
       v-for="row in Number(rows)"
       :style="{
@@ -16,6 +21,7 @@
 <script>
 export default {
   props: {
+    center: Boolean,
     rows: {
       default: function () {
         return 3
@@ -42,9 +48,14 @@ export default {
 </script>
 
 <style scoped>
-p {
-  height: 10px;
-  margin-bottom: 15px;
-  border-radius: 3px;
-}
+  .text {
+    padding-top: 25px;
+  }
+
+  p {
+    height: 10px;
+    margin: 0 auto 15px auto;
+    border-radius: 3px;
+    display: inline-block;
+  }
 </style>
