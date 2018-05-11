@@ -10,6 +10,7 @@
     "test": "yarn jest"
   },
   "dependencies": {
+    "npm": "^6.0.1",
     "vue": "^2.5.2"
   },
   "devDependencies": {
