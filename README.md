@@ -41,6 +41,13 @@
 <v1-image center /> // Centers horizontally
 ```
 
+### Avatar
+
+```javascript
+<v1-avatar />
+<v1-footer count="5" /> // Default: 1
+```
+
 ### Nav
 
 > Works best in a vertically narrow cell
