@@ -2,6 +2,8 @@
 
 > A prototyping component library build for Vue.js
 
+![Protovue](static/images/logo.png?raw=true)
+
 ## Components
 
 ### Grid
