@@ -2,7 +2,9 @@
 
 > A prototyping component library build for Vue.js
 
-![Protovue](static/images/logo.png?raw=true)
+<p align="center">
+  ![Protovue](static/images/logo.png?raw=true | width=400)
+</p>
 
 ## Components
 
