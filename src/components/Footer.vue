@@ -30,8 +30,8 @@ export default {
   },
   methods: {
     linkWidth () {
-      const baseWidth = 70;
-      const addedMax = 40;
+      const baseWidth = 40;
+      const addedMax = 30;
       const addedWidth = baseWidth + (Math.random() * addedMax);
       return addedWidth + 'px';
     }
@@ -61,7 +61,7 @@ export default {
     width: 60px;
     margin: 0 15px;
     height: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     display: inline-block;
   }
 </style>

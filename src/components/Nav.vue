@@ -43,8 +43,8 @@ export default {
   },
   methods: {
     linkWidth () {
-      const baseWidth = 70;
-      const addedMax = 40;
+      const baseWidth = 40;
+      const addedMax = 30;
       const addedWidth = baseWidth + (Math.random() * addedMax);
       return addedWidth + 'px';
     }
@@ -69,14 +69,14 @@ export default {
 
   .logo {
     width: 200px;
-    height: 30px;
+    height: 40px;
     display: flex;
     align-items: center;
   }
 
   .logo .img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     margin-right: 10px;
     display: inline-block;
@@ -84,8 +84,8 @@ export default {
 
   .logo .text {
     width: 160px;
-    height: 10px;
-    border-radius: 3px;
+    height: 20px;
+    border-radius: 10px;
     display: inline-block;
   }
 
@@ -97,7 +97,7 @@ export default {
     width: 60px;
     margin-left: 30px;
     height: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     display: inline-block;
   }
 </style>

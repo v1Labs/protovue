@@ -55,7 +55,7 @@ export default {
   p {
     height: 10px;
     margin: 0 auto 15px auto;
-    border-radius: 3px;
+    border-radius: 5px;
     display: inline-block;
   }
 </style>

@@ -1,3 +1,4 @@
+import Avatar from './components/Avatar';
 import Cell from './components/Cell';
 import Footer from './components/Footer';
 import Grid from './components/Grid';
@@ -7,7 +8,8 @@ import Text from './components/Text';
 
 const Protovue = {
   install(Vue, opt={}) {
-    const color = opt.color || '#dfdfdf';
+    const color = opt.color || '#dce3e4';
+    Vue.component("v1-avatar", Avatar);
     Vue.component("v1-cell", Cell);
     Vue.component("v1-footer", Footer);
     Vue.component("v1-grid", Grid);

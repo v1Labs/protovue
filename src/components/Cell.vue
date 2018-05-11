@@ -73,6 +73,7 @@ export default {
     position: relative;
     overflow: scroll;
     display: grid;
+    border-radius: 5px;
   }
 
   .cell h1 {
