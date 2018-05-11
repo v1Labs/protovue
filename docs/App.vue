@@ -13,7 +13,9 @@
         <v1-image center round width="100px" height="100px" />
         <v1-text center rows="7" />
       </v1-cell>
-      <v1-cell size="7x6" y="1" x="3" />
+      <v1-cell middle size="7x6" y="1" x="3">
+        <h1>test</h1>
+      </v1-cell>
       <v1-cell size="7x1" y="7" x="3">
         <v1-footer />
       </v1-cell>

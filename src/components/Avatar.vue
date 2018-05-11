@@ -33,8 +33,7 @@
           <div
             class="link"
             v-bind:style="{
-              'background': color,
-              'width': linkWidth()
+              'background': color
             }"
             v-for="link in linkCount()"
             :key="link + '_link'"
@@ -70,10 +69,7 @@ export default {
       return (Math.random() * 5) + .25;
     },
     emailWidth () {
-      return Math.random() + .35;
-    },
-    linkWidth () {
-      return '15px';
+      return Math.random() + .15;
     }
   },
   created () {
@@ -126,6 +122,7 @@ export default {
   }
 
   .link {
+    width: 20px;
     height: 8px;
     border-radius: 4px;
     margin-right: 15px;
