@@ -1,6 +1,6 @@
 {
   "name": "v1labs-protovue",
-  "version": "0.0.4",
+  "version": "0.0.41",
   "description": "A prototyping component library for Vue.js",
   "author": "Dane Lyons",
   "main": "dist/index.js",
