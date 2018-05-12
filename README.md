@@ -3,7 +3,7 @@
 > A prototyping component library build for Vue.js
 
 <p align="center">
-  <img alt="Protovue" src="static/images/logo.png?raw=true" width="400" />
+  <img alt="Protovue" src="static/images/icon-green.png?raw=true" width="400" />
 </p>
 
 ## Components
