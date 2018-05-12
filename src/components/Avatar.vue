@@ -57,7 +57,6 @@ export default {
   data () {
     return {
       color: null,
-      count: 1,
       links: 3
     }
   },
