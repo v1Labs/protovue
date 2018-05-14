@@ -14,7 +14,7 @@
         <v1-text center rows="7" />
       </v1-cell>
       <v1-cell middle size="7x6" y="1" x="3">
-        <v1-image center round width="200px" height="200px" />
+        <v1-image center round width="150px" height="150px" />
       </v1-cell>
       <v1-cell size="7x1" y="7" x="3">
         <v1-footer />
