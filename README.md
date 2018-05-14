@@ -34,7 +34,7 @@
 <v1-text />
 <v1-text rows="5" /> // Default: 3
 ```
-<img alt="Text" src="https://v1labs.github.io/protovue/assets/text.png?raw=true" style="max-height:150px" />
+<img alt="Text" src="https://v1labs.github.io/protovue/assets/text.png?raw=true" height="150px" />
 
 ### Image
 
@@ -45,7 +45,7 @@
 <v1-image round /> // Makes circle if width equals height
 <v1-image center /> // Centers horizontally
 ```
-<img alt="Image" src="https://v1labs.github.io/protovue/assets/image.png?raw=true" style="max-height:150px" />
+<img alt="Image" src="https://v1labs.github.io/protovue/assets/image.png?raw=true" height="150px" />
 
 ### Avatar
 
@@ -53,7 +53,7 @@
 <v1-avatar />
 <v1-footer count="5" /> // Default: 1
 ```
-<img alt="Avatar" src="https://v1labs.github.io/protovue/assets/avatar.png?raw=true" style="max-height:150px" />
+<img alt="Avatar" src="https://v1labs.github.io/protovue/assets/avatar.png?raw=true" height="150px" />
 
 ### Nav
 
