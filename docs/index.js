@@ -3,7 +3,7 @@ import App from './App.vue';
 import Protovue from '../src/index.js';
 
 Vue.use(Protovue, {
-  color: '#dce3e4'
+  color: '#CFD8DC'
 });
 
 new Vue({
