@@ -34,7 +34,7 @@
 <v1-text />
 <v1-text rows="5" /> // Default: 3
 ```
-<img alt="Text" src="https://v1labs.github.io/protovue/assets/text.png?raw=true" width="225" />
+<img alt="Text" src="https://v1labs.github.io/protovue/assets/text.png?raw=true" />
 
 ### Image
 
@@ -45,7 +45,7 @@
 <v1-image round /> // Makes circle if width equals height
 <v1-image center /> // Centers horizontally
 ```
-<img alt="Image" src="https://v1labs.github.io/protovue/assets/image.png?raw=true" width="225" />
+<img alt="Image" src="https://v1labs.github.io/protovue/assets/image.png?raw=true" />
 
 ### Avatar
 
@@ -53,7 +53,7 @@
 <v1-avatar />
 <v1-footer count="5" /> // Default: 1
 ```
-<img alt="Avatar" src="https://v1labs.github.io/protovue/assets/avatar.png?raw=true" width="225" />
+<img alt="Avatar" src="https://v1labs.github.io/protovue/assets/avatar.png?raw=true" />
 
 ### Nav
 
@@ -63,7 +63,7 @@
 <v1-nav />
 <v1-nav links="5" /> // Default: 4
 ```
-<img alt="Nav" src="https://v1labs.github.io/protovue/assets/nav.png?raw=true" width="225" />
+<img alt="Nav" src="https://v1labs.github.io/protovue/assets/nav.png?raw=true" />
 
 ### Footer
 
@@ -73,4 +73,4 @@
 <v1-footer />
 <v1-footer links="5" /> // Default: 4
 ```
-<img alt="Footer" src="https://v1labs.github.io/protovue/assets/footer.png?raw=true" width="225" />
+<img alt="Footer" src="https://v1labs.github.io/protovue/assets/footer.png?raw=true" />
