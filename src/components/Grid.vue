@@ -67,6 +67,7 @@ export default {
 <style scoped>
   .grid {
     display: grid;
+    position: relative;
   }
 
   .guides {
