@@ -78,3 +78,19 @@
 <v1-footer links="5" /> // Default: 4
 ```
 <img alt="Footer" src="https://v1labs.github.io/protovue/assets/footer.png?raw=true" />
+
+### Intro
+
+> Shows a model explaining the prototype. Helps your users get into the right mind set.
+
+> Works best if you include it before `<v1-grid>`.
+
+```javascript
+<v1-intro title="Testing Feature {X}" version="v1">
+  <p>Imagine your job title is {A} while working for company {B}. This prototype explores a solution for problem {C}.</p>
+  <p>Please take it for a test run. Then we'd like to know if you\'re excited about this direction and if you've got any feedback or ideas.</p>
+  <p>Thanks for your input!</p>
+</v1-intro>
+<v1-grid />
+```
+<img alt="Intro" src="https://v1labs.github.io/protovue/assets/intro.png?raw=true" height="200px" />
