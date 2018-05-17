@@ -1,5 +1,7 @@
 <template>
   <div>
+    <v1-intro>
+    </v1-intro>
     <v1-grid size="12x10" gap="10">
       <v1-cell size="12x1">
         <v1-nav />
