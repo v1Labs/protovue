@@ -64,7 +64,6 @@ export default {
           this.showIntro = false;
         }, 310);
       }
-      //console.log(this.show);
     }
   },
   mounted: function () {

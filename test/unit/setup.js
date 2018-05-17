@@ -1,3 +1,5 @@
-import Vue from 'vue'
+import Vue from 'vue';
+import Protovue from '@/index.js';
 
-Vue.config.productionTip = false
+Vue.use(Protovue);
+Vue.config.productionTip = false;
