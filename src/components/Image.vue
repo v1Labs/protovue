@@ -6,6 +6,7 @@
     }"
   >
     <div
+      class="img"
       :style="{
         'width': w,
         'height': h,
@@ -46,7 +47,7 @@ export default {
     padding-top: 25px;
   }
 
-  .image div {
+  .image .img {
     display: inline-block;
   }
 </style>
