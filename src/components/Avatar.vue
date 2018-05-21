@@ -56,7 +56,6 @@ export default {
   },
   data () {
     return {
-      color: null,
       links: 3
     }
   },
@@ -70,9 +69,6 @@ export default {
     emailWidth () {
       return Math.random() + .15;
     }
-  },
-  created () {
-    this.color = this.$theme.color;
   }
 }
 </script>

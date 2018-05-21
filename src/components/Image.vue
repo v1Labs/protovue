@@ -35,7 +35,6 @@ export default {
     }
   },
   created () {
-    this.color = this.$theme.color;
     if (this.height) { this.h = this.height }
     if (this.width) { this.w = this.width }
   }

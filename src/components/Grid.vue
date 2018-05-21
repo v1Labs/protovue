@@ -1,6 +1,9 @@
 <template>
   <div
     class="grid"
+    v-bind:class="{
+      'flat': flat
+    }"
     v-bind:style="{
       'grid-gap': `${cellGap}px`,
       'padding': `${cellGap}px`,
@@ -8,7 +11,9 @@
       'grid-template-columns': `repeat(${cols}, 1fr)`,
       'grid-template-rows': `repeat(${rows}, 1fr)`,
       'width': `${width}px`,
-      'height': `${height}px`
+      'height': `${height}px`,
+      'background': gridBackground,
+      'border-bottom': `${cellGap}px solid ${gridBackground}`
     }"
   >
     <slot />
@@ -37,6 +42,7 @@
 export default {
   props: {
     guides: Boolean,
+    flat: Boolean,
     size: String,
     gap: String
   },
@@ -68,6 +74,11 @@ export default {
   .grid {
     display: grid;
     position: relative;
+  }
+
+  .flat .cell {
+    background: transparent !important;
+    border-radius: 0 !important;
   }
 
   .guides {

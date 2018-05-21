@@ -29,16 +29,15 @@ export default {
     y: String,
     flat: Boolean,
     middle: Boolean,
-    bottom: Boolean
+    bottom: Boolean,
+    background: String
   },
   data () {
     return {
       cols: 1,
       rows: 1,
       colOffset: 0,
-      rowOffset: 0,
-      light: null,
-      dark: null
+      rowOffset: 0
     }
   },
   methods: {
@@ -61,8 +60,6 @@ export default {
     if (this.y) {
       this.rowOffset = this.y;
     }
-    this.dark = this.$theme.dark;
-    this.light = this.$theme.light;
   }
 }
 </script>
