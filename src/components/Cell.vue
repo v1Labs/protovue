@@ -1,13 +1,22 @@
 <template>
   <div
     class="cell"
+    v-bind:class="{
+      'border': border,
+      'border-top': borderTop,
+      'border-right': borderRight,
+      'border-bottom': borderBottom,
+      'border-left': borderLeft,
+      'flat': flat
+    }"
     v-bind:style="{
       'grid-column-start': Number(colOffset) + 1,
       'grid-column-end': Number(cols) + Number(colOffset) + 1,
       'grid-row-start': Number(rowOffset) + 1,
       'grid-row-end': Number(rows) + Number(rowOffset) + 1,
       'background': flat ? 'transparent' : light,
-      'color': dark
+      'color': color,
+      'border-color': color
     }"
   >
     <div
@@ -30,7 +39,12 @@ export default {
     flat: Boolean,
     middle: Boolean,
     bottom: Boolean,
-    background: String
+    background: String,
+    border: Boolean,
+    borderTop: Boolean,
+    borderRight: Boolean,
+    borderBottom: Boolean,
+    borderLeft: Boolean
   },
   data () {
     return {
@@ -73,7 +87,36 @@ export default {
     border-radius: 5px;
   }
 
+  .flat {
+    border-radius: 0;
+  }
+
   .cell h1 {
     color: inherit;
+  }
+
+  .border {
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  .border-top {
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
+
+  .border-right {
+    border-right-width: 1px;
+    border-right-style: solid;
+  }
+
+  .border-bottom {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+
+  .border-left {
+    border-left-width: 1px;
+    border-left-style: solid;
   }
 </style>

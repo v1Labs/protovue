@@ -19,6 +19,7 @@
 <v1-grid size="8x8" /> // Default: 12x10
 <v1-grid gap="0" /> // Default: 10
 <v1-grid guides /> // Shows guides to help build cells
+<v1-grid flat /> // Makes all cells flat (no background)
 ```
 
 ### Cell
@@ -28,8 +29,14 @@
 <v1-cell size="2x4" /> // WxH: size="2,4" and size="2 4" also work
 <v1-cell x="1" /> // Default: 0
 <v1-cell y="3" /> // Default: 0
+<v1-cell flat /> // Removes background color
 <v1-cell middle /> // Vertically aligns content in middle
 <v1-cell bottom /> // Vertically aligns content in bottom
+<v1-cell border /> // Adds border to all sides of cell
+<v1-cell borderTop /> // Adds border to top of cell
+<v1-cell borderRight /> // Adds border to right of cell
+<v1-cell borderBottom /> // Adds border to bottom of cell
+<v1-cell borderLeft /> // Adds border to left of cell
 ```
 
 ### Text
