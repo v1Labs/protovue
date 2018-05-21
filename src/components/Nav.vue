@@ -38,7 +38,6 @@ export default {
   },
   data () {
     return {
-      color: null
     }
   },
   methods: {
@@ -48,9 +47,6 @@ export default {
       const addedWidth = baseWidth + (Math.random() * addedMax);
       return addedWidth + 'px';
     }
-  },
-  created () {
-    this.color = this.$theme.color;
   }
 }
 </script>

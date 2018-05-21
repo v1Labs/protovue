@@ -10,6 +10,7 @@ import Text from './components/Text';
 const Protovue = {
   install(Vue, opt={}) {
     const color = opt.color || '#dce3e4';
+    const background = opt.background || '#ffffff';
     Vue.component("v1-avatar", Avatar);
     Vue.component("v1-cell", Cell);
     Vue.component("v1-footer", Footer);
@@ -19,11 +20,14 @@ const Protovue = {
     Vue.component("v1-nav", Nav);
     Vue.component("v1-text", Text);
 
-    Vue.prototype.$theme = {
-      color,
-      dark: lightenColor(color, -20),
-      light: lightenColor(color, 20)
-    }
+    Vue.mixin({
+      created: function () {
+        this.dark = lightenColor(color, -20);
+        this.light = lightenColor(color, 20); //'rgba(50,50,50,.03)';
+        this.color = color;
+        this.gridBackground = background;
+      }
+    });
   }
 };
 
