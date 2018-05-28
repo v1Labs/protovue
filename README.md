@@ -45,6 +45,8 @@
 ```javascript
 <v1-text />
 <v1-text rows="5" /> // Default: 3
+<v1-text center /> // Centers rows
+<v1-text justify /> // Makes rows full width
 ```
 <img alt="Text" src="https://v1labs.github.io/protovue/assets/text.png?raw=true" height="150px" />
 
