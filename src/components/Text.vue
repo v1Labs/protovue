@@ -22,6 +22,7 @@
 export default {
   props: {
     center: Boolean,
+    justify: Boolean,
     rows: {
       default: function () {
         return 3
@@ -34,8 +35,11 @@ export default {
   },
   methods: {
     rowWidth (row) {
-      const baseWidth = row == this.rows ? 10 : 80;
-      const addedMax = row == this.rows ? 90 : 20;
+      if (this.justify) {
+        return '85%';
+      }
+      const baseWidth = row == this.rows ? 35 : 65;
+      const addedMax = row == this.rows ? 10 : 20;
       const addedWidth = baseWidth + (Math.random() * addedMax);
       return addedWidth + '%';
     }

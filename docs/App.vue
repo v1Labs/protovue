@@ -10,7 +10,7 @@
         <v1-avatar count="4" />
       </v1-cell>
       <v1-cell flat borderLeft middle size="2x9" y="1" x="10">
-        <v1-image center round width="100px" height="100px" />
+        <v1-image center round width="150px" height="150px" />
         <v1-text center rows="7" />
       </v1-cell>
       <v1-cell flat middle size="7x8" y="1" x="3" style="text-align:center">

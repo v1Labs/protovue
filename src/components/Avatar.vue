@@ -27,7 +27,7 @@
             class="link"
             v-bind:style="{
               'background': color,
-              'flex-grow': emailWidth()
+              'flex-grow': 1
             }"
           />
           <div
@@ -48,6 +48,11 @@
 <script>
 export default {
   props: {
+    links: {
+      default: function () {
+        return 3
+      }
+    },
     count: {
       default: function () {
         return 1
@@ -56,18 +61,18 @@ export default {
   },
   data () {
     return {
-      links: 3
     }
   },
   methods: {
     linkCount () {
-      return Math.floor(Math.random() * this.links) + 1;
+      //return Math.floor(Math.random() * this.links) + 1;
+      return Number(this.links);
     },
     nameWidth () {
-      return (Math.random() * 5) + .25;
+      return (Math.random() * 1) + .1;
     },
     emailWidth () {
-      return Math.random() + .15;
+      return Math.random() + .07;
     }
   }
 }
