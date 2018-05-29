@@ -104,3 +104,6 @@
 <v1-grid />
 ```
 <img alt="Intro" src="https://v1labs.github.io/protovue/assets/intro.png?raw=true" height="200px" />
+
+## License
+[MIT](https://github.com/v1Labs/protovue/blob/master/LICENSE)
