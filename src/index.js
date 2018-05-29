@@ -1,5 +1,6 @@
 import Avatar from './components/Avatar';
 import Cell from './components/Cell';
+import Chart from './components/Chart';
 import Footer from './components/Footer';
 import Grid from './components/Grid';
 import Image from './components/Image';
@@ -13,6 +14,7 @@ const Protovue = {
     const background = opt.background || '#ffffff';
     Vue.component("v1-avatar", Avatar);
     Vue.component("v1-cell", Cell);
+    Vue.component("v1-chart", Chart);
     Vue.component("v1-footer", Footer);
     Vue.component("v1-grid", Grid);
     Vue.component("v1-image", Image);

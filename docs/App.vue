@@ -14,6 +14,7 @@
         <v1-text center rows="7" />
       </v1-cell>
       <v1-cell flat middle size="7x8" y="1" x="3" style="text-align:center">
+        <v1-chart height="300" margin="100" />
       </v1-cell>
       <v1-cell flat borderTop size="7x1" y="9" x="3">
         <v1-footer />
