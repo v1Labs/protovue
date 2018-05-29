@@ -89,11 +89,9 @@
 ```
 <img alt="Footer" src="https://v1labs.github.io/protovue/assets/footer.png?raw=true" />
 
-### Intro
+### Chart
 
-> Shows a model explaining the prototype. Helps your users get into the right mind set.
-
-> Works best if you include it before `<v1-grid>`.
+> Shows a filled line chart.
 
 ```javascript
 <v1-chart />
@@ -102,9 +100,11 @@
 ```
 <img alt="Chart" src="https://v1labs.github.io/protovue/assets/chart.png?raw=true" height="200px" />
 
-### Chart
+### Intro
 
-> Shows a filled line chart.
+> Shows a model explaining the prototype. Helps your users get into the right mind set.
+
+> Works best if you include it before `<v1-grid>`.
 
 ```javascript
 <v1-intro title="Testing Feature {X}" version="v1">
