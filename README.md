@@ -96,6 +96,17 @@
 > Works best if you include it before `<v1-grid>`.
 
 ```javascript
+<v1-chart />
+<v1-chart height="300" /> // Default: 200
+<v1-chart margin="100" /> // Horizontal margin, Default: 50
+```
+<img alt="Chart" src="https://v1labs.github.io/protovue/assets/chart.png?raw=true" height="200px" />
+
+### Chart
+
+> Shows a filled line chart.
+
+```javascript
 <v1-intro title="Testing Feature {X}" version="v1">
   <p>Imagine your job title is {A} while working for company {B}. This prototype explores a solution for problem {C}.</p>
   <p>Please take it for a test run. Then we'd like to know if you\'re excited about this direction and if you've got any feedback or ideas.</p>
